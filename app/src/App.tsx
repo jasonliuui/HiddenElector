@@ -43,7 +43,7 @@ function ElectionApp() {
   const [decryptedResults, setDecryptedResults] = useState<Record<number, Record<number, number>>>({});
 
   const hasValidAddress = useMemo(
-    () => /^0x[a-fA-F0-9]{40}$/.test(hiddenElectorAddress) && hiddenElectorAddress !== '0x0000000000000000000000000000000000000000',
+    () => /^0x[a-fA-F0-9]{40}$/.test(hiddenElectorAddress) ,
     [],
   );
 
